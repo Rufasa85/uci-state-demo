@@ -4,10 +4,10 @@ import "./style.css"
 import { CounterContext } from '../../utils/CounterContext'
 
 const D = () => {
-  const {count} = useContext(CounterContext)
+  const {state} = useContext(CounterContext)
   return (
     <div className='D'>
-        <h2>Fourth count:{count}</h2>
+        <h2>Fourth count:{state.count}</h2>
         <E/>
     </div>
   )
