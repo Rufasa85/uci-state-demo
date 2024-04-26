@@ -1,8 +1,11 @@
 import A from "./components/A"
+import { CounterProvider } from "./utils/CounterContext"
 function App() {
   return (
     <>
-      <A/>
+      <CounterProvider>
+        <A/>
+      </CounterProvider>
     </>
   )
 }

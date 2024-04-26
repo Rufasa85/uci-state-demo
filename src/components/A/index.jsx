@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import B from '../B'
 import "./style.css"
+import { CounterContext } from '../../utils/CounterContext'
 
 const A = () => {
+  const {count} = useContext(CounterContext);
   return (
     <div className='A'>
-        <h2>First</h2>
+        <h2>First count:{count}</h2>
         <B/>
     </div>
   )
